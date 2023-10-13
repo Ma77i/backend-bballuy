@@ -22,4 +22,5 @@ export class Authdto {
   @IsString()
   @IsNotEmpty()
   password: string;
+  role: any;
 }
