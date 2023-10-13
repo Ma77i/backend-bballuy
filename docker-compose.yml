@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  bballuy-db:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: matias
+      POSTGRES_DB: bballuy
+    networks:
+      - mattiass
+networks:
+  mattiass:
